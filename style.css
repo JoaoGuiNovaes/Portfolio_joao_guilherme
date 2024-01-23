@@ -15,7 +15,7 @@ font-family: 'Ubuntu', sans-serif;
     --bg-color:#1f242d;
     --second-bg-color: #323946;
     --text-color: #dfdbcf;
-    --main-color: #0ef;
+    --main-color: #c5211c;
 }
 
 html{
@@ -51,6 +51,9 @@ header{
     font-weight: 700;
 }
 
+.logo span{
+  color: var(--main-color);
+}
 
 .navoption, .homeoption{
     position: relative;
@@ -68,7 +71,7 @@ header{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #3498db;
+    background-color: var(--main-color);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease-in-out;
@@ -154,45 +157,23 @@ header{
 
   .download-btn{
     text-decoration: none;
-    outline: .1rem solid var(--main-color);
-    display: inline-block;
-    color: var(--second-bg-color);
+    outline: .3rem solid var(--second-bg-color);
+    color: var(--text-color);
     padding: 10px;
     background: var(--main-color);
     border-radius: 4rem;
     width: 40%;
-    box-shadow: 10px 10px 19px -4px rgba(0,0,0,0.75);
     font-size: 1.2rem;
-    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: .1rem;
     width: 40%;
-    overflow: hidden;
     cursor: pointer;
-    transition: color 1s;
     transition: ease 1s;
-    position: relative;
   }
 
   .download-btn:hover{
-    color: var(--second-bg-color);
     transform: scale(1.1);
-  }
-
-  .download-btn::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50px;
-    width: 0;
-    height: 100px;
-    background-color: var(--main-color);
-    transform: skewX(35deg);
-    z-index: -1;
-    transition: width 1s;
-  }
-
- .do:hover::before{
-  width: 150%;
   }
 
 
@@ -210,6 +191,10 @@ header{
     width: 50%;
     justify-content: center;
     align-items: center;
+  }
+
+  .img-about{
+    width: 70%;
   }
 
   .about span{
