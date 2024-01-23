@@ -293,18 +293,18 @@ header{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    border: .3rem solid var(--second-bg-color);
     width: 5rem;
     height: 5rem;
-    background: var(--second-bg-color);
+    background: var(--text-color);
     border-radius: 50%;
-    border: var(--bg-color);
     font-size: 2rem;
   }
 
 
   .portfolio-layer a .external{
-    font-size: 2rem;
-    color: var(--main-color);
+    font-size: 2.6rem;
+    color: var(--second-bg-color);
   }
 
   .project-box:hover img{
