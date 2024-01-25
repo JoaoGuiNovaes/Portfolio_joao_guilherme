@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="images/favico.png" type="image/x-icon">
     <title>PortFolio</title>
 </head>
 <body>
+    <!-- ----------HEADER---------- -->
     <header>
         <a href="" class="logo">Joao<span>G.</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
@@ -21,6 +23,7 @@
     </header>
 
 <main>
+    <!-- ----------HOME---------- -->
     <section class="home" id="home">
         <div class="left-content">
             <h2>Hello, It's me</h2>
@@ -32,8 +35,7 @@
             <div class="contact">
                 <a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-carvalho-novaes/"><i class='bx bxl-linkedin'></i></a>
                 <a href="mailto:joaoguilhermecarvalhonovaes@gmail.com"><i class='bx bx-envelope'></i></a>
-                <a href=""><i class='bx bxl-github'></i></a>
-                <a href=""><i class='bx bxl-whatsapp-square'></i></a>
+                <a href="https://github.com/JoaoGuiNovaes"><i class='bx bxl-github'></i></a>
             </div>
             <a href="#"><button class="download-btn">Download CV</button></a>
         </div>
@@ -41,8 +43,9 @@
             <img src="images/foto.png" alt="Rapaz bonitão">
         </div>
     </section>
-
+<!-- ----------ABOUT---------- -->
     <section class="about" id="about">
+        <div class="about-up">
         <div class="about-left">
             <img class="img-about" src="images/Software code testing.gif" alt="">
         </div>
@@ -50,8 +53,19 @@
             <h2>About <span>me</span></h2>
             <p>Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aut dignissimos ab fugiat, odio itaque excepturi vero dolorum incidunt, reprehenderit, molestias exercitationem repudiandae voluptatum officia tempore a facilis maiores modi? sit amet consectetur adipisicing elit. Reiciendis atque laudantium maiores corrupti error voluptates id itaque praesentium est totam voluptatem fugit, architecto, consequatur, perspiciatis ullam commodi quis excepturi optio!</p>
         </div>
+    </div>
+        <div class="myskills">
+            <img class="hability" src="images/java.png" alt="">
+            <img class="hability" src="images/c-sharp.png" alt="">
+            <img class="hability" src="images/mysql (2).png" alt="">
+            <img class="hability" src="images/github.png" alt="">
+            <img class="hability" src="images/html.png" alt="">
+            <img class="hability" src="images/css-3.png" alt="">
+            <img class="hability" src="images/structure.png" alt="">
+            <img class="hability" src="images/bootstrap.png" alt="">
+        </div>
     </section>
-
+<!-- ----------PROJECTS---------- -->
     <section class="projects" id="projects">
         <h2 class="heading">
             Latest <span>projects</span>
@@ -61,19 +75,18 @@
             <div class="project-box">
                 <img src="images/obrago.png" class="image-project" alt="">
                 <div class="portfolio-layer">
-                    <div class="contact">
-                        <a href=""><img src="images/java.png" alt=""></a>
-                        <a href=""><img src="images/mysql.png" alt=""></i></a>
-                        <a href=""><img src="images/bootstrap.png" alt=""></a>
-                        <a href=""><img src="images/html.png" alt=""></a>
+                    <div class="contact skillsproj">
+                        <div class="projskill"><img src="images/java.png" alt=""></div>
+                        <div class="projskill"><img src="images/mysql.png" alt=""></div>
+                        <div class="projskill"><img src="images/bootstrap.png" alt=""></div>
+                        <div class="projskill"><img src="images/html.png" alt=""></div>
                     </div>
-                    <a href=""><i class='bx bx-link-external external'></i></a>
+                    <a href="https://github.com/JoaoGuiNovaes/ObraGo"><i class='bx bx-link-external external'></i></a>
                 </div>
             </div>
             <div class="description">
-                <h3 class="project-tittle">ObraGo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis adipisci, consequatur eveniet
-                    iste a cumque vitae quae eligendi dicta alias. Dicta, nihil veniam. Aspernatur vero explicabo iusto dicta quasi.
+                <h3 class="project-tittle">Obra<span>Go</span></h3>
+                <p>Este projeto visa criar uma plataforma para reunir produtos de diferentes lojas. Inclui funcionalidades como cadastro e login para clientes, uma página inicial que exibe produtos de várias lojas, além de recursos completos de cadastro e login para lojas, incluindo operações CRUD para gerenciar seus produtos. Desenvolvido utilizando Java, Servlet, Hibernate, Apache TomCat e páginas .JSP.
                 </p>
             </div>
         </div>
@@ -81,19 +94,18 @@
             <div class="project-box">
                 <img src="images/futbol.png" class="image-project" alt="">
                 <div class="portfolio-layer">
-                    <div class="contact">
-                        <a href=""><img src="images/js.png" alt=""></a>
-                        <a href=""><img src="images/mysql.png" alt=""></a>
-                        <a href=""><img src="images/bootstrap.png" alt=""></a>
-                        <a href=""><img src="images/html.png" alt=""></a>
-                    </div>
-                    <a href=""><i class='bx bx-link-external external'></i></a>
+                    <div class="contact skillsproj">
+                        <div class="projskill"><img src="images/js.png" alt=""></div>
+                        <div class="projskill"><img src="images/mysql.png" alt=""></div>
+                        <div class="projskill"><img src="images/bootstrap.png" alt=""></div>
+                        <div class="projskill"><img src="images/html.png" alt=""></div>
+                    </div>                    
+                    <a href="https://github.com/JoaoGuiNovaes/FutBoleiro"><i class='bx bx-link-external external'></i></a>
                 </div>
             </div>
             <div class="description">
-                <h3 class="project-tittle">ObraGo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis adipisci, consequatur eveniet
-                    iste a cumque vitae quae eligendi dicta alias. Dicta, nihil veniam. Aspernatur vero explicabo iusto dicta quasi.
+                <h3 class="project-tittle">Fut<span>Boleiro</span></h3>
+                <p>FutBoleiro é um projeto abrangente que incorpora cadastro e login, conectado a um banco de dados MySQL. Além disso, apresenta dinamicamente notícias alimentadas por dados provenientes do banco de dados. A implementação do back-end é realizada usando Node.js e AJAX.
                 </p>
             </div>
         </div>
@@ -101,18 +113,17 @@
             <div class="project-box">
                 <img src="images/mvclab.png" class="image-project" alt="">
                 <div class="portfolio-layer">
-                    <div class="contact">
-                        <a href=""><img src="images/c-sharp.png" alt=""></a>
-                        <a href=""><img src="images/mysql.png" alt=""></i></a>
-                        <a href=""><img src="images/html.png" alt=""></a>
+                    <div class="contact skillsproj">
+                        <div class="projskill"><img src="images/c-sharp.png" alt=""></div>
+                        <div class="projskill"><img src="images/mysql.png" alt=""></div>
+                        <div class="projskill"><img src="images/html.png" alt=""></div>
                     </div>
-                    <a href=""><i class='bx bx-link-external external'></i></a>
+                    <a href="https://github.com/JoaoGuiNovaes/MvcLabManager"><i class='bx bx-link-external external'></i></a>
                 </div>
             </div>
             <div class="description">
-                <h3 class="project-tittle">ObraGo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis adipisci, consequatur eveniet
-                    iste a cumque vitae quae eligendi dicta alias. Dicta, nihil veniam. Aspernatur vero explicabo iusto dicta quasi.
+                <h3 class="project-tittle">Lab<span>Manager</span></h3>
+                <p>LabManager é um projeto de gerenciamento completo (CRUD) de laboratórios e computadores. Foi desenvolvido em .NET e ASP.NET Core, proporcionando prática em banco de dados e back-end. O projeto envolve tecnologias como C#, MySQL e HTML.
                 </p>
             </div>
         </div>
@@ -120,21 +131,21 @@
             <div class="project-box">
                 <img src="images/cep.png" class="image-project" alt="">
                 <div class="portfolio-layer">
-                    <div class="contact">
-                        <a href=""><img src="images/html.png" alt=""></a>
-                        <a href=""><img src="images/structure.png" alt=""></a>
-                        <a href=""><img src="images/js.png" alt=""></a>
+                    <div class="contact skillsproj">
+                        <div class="projskill"><img src="images/html.png" alt=""></div>
+                            <div class="projskill"><img src="images/structure.png" alt=""></div>
+                            <div class="projskill"><img src="images/js.png" alt=""></div>
                     </div>
-                    <a href=""><i class='bx bx-link-external external'></i></a>
+                    <a href="https://github.com/JoaoGuiNovaes/MvcLabManager"><i class='bx bx-link-external external'></i></a>
                 </div>
             </div>
             <div class="description">
-                <h3 class="project-tittle">ObraGo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt perspiciatis adipisci, consequatur eveniet
-                    iste a cumque vitae quae eligendi dicta alias. Dicta, nihil veniam. Aspernatur vero explicabo iusto dicta quasi.
+                <h3 class="project-tittle">Buscador de <span>CEP</span></h3>
+                <p>Este é um buscador simples de CEP que consome a API ViaCep. A aplicação, desenvolvida enquanto estudava React.js, retorna informações detalhadas, como rua, complemento, bairro, cidade e estado. Uma excelente introdução ao desenvolvimento em React.js e à integração com APIs externas.
                 </p>
             </div>
         </div>
+        
         </div>
     </section>
 
@@ -145,7 +156,7 @@
 
 </main>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

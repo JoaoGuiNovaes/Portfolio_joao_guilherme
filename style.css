@@ -2,9 +2,10 @@
 
 *{
 margin: 0;
+color: var(--text-color);
 padding: 0;
 box-sizing: border-box;
-text-decoration: none;
+text-decoration: none !important;
 border: none;
 scroll-behavior: smooth;
 /* font-family: 'Roboto', sans-serif; */
@@ -12,9 +13,9 @@ font-family: 'Ubuntu', sans-serif;
 }
 
 :root{
-    --bg-color:#1f242d;
+    --bg-color:#1f242d !important;
     --second-bg-color: #323946;
-    --text-color: #dfdbcf;
+    --text-color: #dfdbcf !important;
     --main-color: #c5211c;
 }
 
@@ -97,6 +98,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10rem 9% 2rem;
+    background-color: var(--bg-color);
   }
 
   .left-content{
@@ -179,12 +181,28 @@ header{
 
   .about{
     display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    background-color: var(--second-bg-color);
+  }
+
+  .myskills{
+    
+  }
+
+  .hability{
+    width: 80px;
+  }
+
+.about-up{
+  display: flex;
     justify-content: center;
     align-items: center;
     white-space: pre-line;
     gap: 2rem;
     background-color: var(--second-bg-color);
-  }
+}
 
   .about-left{
     display: flex;
@@ -274,7 +292,13 @@ header{
     transition: .5 ease;
   }
 
-  .portfolio-layer a{
+  .skillsproj{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: .8rem;
+  }
+
+  .projskill, .portfolio-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -291,6 +315,7 @@ header{
     font-size: 2.6rem;
     color: var(--second-bg-color);
   }
+  
 
   .project-box:hover img{
     transform: scale(1.1);
@@ -303,6 +328,10 @@ header{
 .project-tittle{
   font-size: 3rem;
   margin-bottom: 3%;
+}
+
+.portfolio-container span{
+  color: var(--main-color);
 }
 
 .description p{
