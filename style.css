@@ -46,6 +46,10 @@ header{
     z-index: 100;
 }
 
+header.sticky{
+  border-bottom: .1rem solid rgba(0,0,0,.25);
+}
+
 .logo{
     font-size: 2.7rem;
     color: var(--text-color);
@@ -103,6 +107,7 @@ header{
 
   .left-content{
     max-width: 65vw;
+    padding-right: 5%;
   }
 
   .right-content img{
@@ -164,7 +169,7 @@ header{
     padding: 10px;
     background: var(--main-color);
     border-radius: 4rem;
-    width: 40%;
+    min-width: 60%;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 600;
@@ -345,7 +350,87 @@ header{
   align-items: center;
 }
 
+@media (max-width : 1200px){
+  html{
+    font-size:70%;
+  }
+  section{
+    min-height: 80vh;
+  }
+}
 
+@media (max-width : 991px){
+  header{
+    padding: 2rem 3%;
+  }
 
+  section{
+    padding: 10rem 3% 2rem;
+  }
 
-  
+  footer{
+    padding: 2rem 3%;
+  }
+}
+
+@media (max-width : 700px){
+  #menu-icon{
+    display: block;
+  }
+
+  html{
+    font-size:50%;
+  }
+
+  nav{
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background-color: var(--bg-color);
+    border-top: .1rem solid rgba(0,0,0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    display: none;
+  }
+
+  nav.active{
+    display: flex;
+  }
+  nav a{
+    display: block;
+    font-size: 1.5rem !important;
+    margin: 3rem 0;
+  }
+}
+
+@media (max-width : 700px){
+  .left-content h1{
+    font-size: 2.3em;
+  }
+} 
+
+@media (max-width : 500px){
+  .home{
+    flex-direction: column;
+    justify-content:space-around;
+  }
+
+  .right-content{
+    margin-bottom: 4%;
+  }
+
+  .about-left{
+    display: none;
+  }
+
+  .about-right{
+    width: 80%;
+  }
+
+  .portfolio-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+} 
