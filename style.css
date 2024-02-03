@@ -132,6 +132,7 @@ header.sticky{
 
   .left-content p{
     margin-top: 2%;
+    margin-bottom: -2%;
     font-size: 1.4rem;
     white-space: pre-line;
   }
@@ -141,7 +142,6 @@ header.sticky{
   }
 
   .contact a{
-    
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -193,7 +193,11 @@ header.sticky{
   }
 
   .myskills{
-    
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    margin-bottom: 3%
   }
 
   .hability{
@@ -240,7 +244,7 @@ header.sticky{
   }
 
   .projects{
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,7 +266,6 @@ header.sticky{
     margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
     gap: 2.5rem;
   }
 
@@ -420,17 +423,89 @@ header.sticky{
 
   .right-content{
     margin-bottom: 4%;
-  }
-
-  .about-left{
-    display: none;
-  }
-
-  .about-right{
-    width: 80%;
+    margin-top: 5%;
   }
 
   .portfolio-container{
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .copy{
+    font-size: 1.2rem !important;
+  }
+
+.email{
+  font-size: 1.2rem !important;
+}
+
 } 
+
+@media (max-width : 1150px){
+    .hability{
+      width: 70px;
+    }
+} 
+
+@media (max-width : 1015px){
+  .hability{
+    width: 50px;
+  }
+  .myskills{
+    padding-right: 6%;
+  }
+} 
+
+@media (max-width : 750px){
+  .hability{
+    width: 30px;
+  }
+} 
+
+@media (max-width : 400px){
+  .hability{
+    width: 15px;
+  }
+} 
+
+@media (max-width : 911px){
+  .about-left{
+    display: none;
+  }
+  .about-right{
+    width: 80%;
+  }
+} 
+
+footer{
+  background-color: var(--second-bg-color);
+  width: 100%;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrowup{
+  cursor: pointer;
+}
+
+.copy{
+  font-size: 1.4rem;
+  margin: 10px;
+}
+  
+.email{
+  font-size: 1.15rem;
+}
+
+.bx-phone, .bxl-gmail{
+  color: var(--main-color);
+}
+
+.copy span{
+  color: var(--main-color);
+}
+
+.num{
+  font-size: 1.4rem;
+}
